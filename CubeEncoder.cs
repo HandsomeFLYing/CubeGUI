@@ -143,7 +143,7 @@ namespace RubikCubeFinal
             {
                 Console.WriteLine($"有效值：{resultSU}\r\n");
                 //求得解
-                var result = Search.solution(code, out info, resultSU);
+                var result = Kociemba.solution(code, out info, resultSU);
                 //MessageBox.Show("求解步骤：" + result + "\r\n\r\n用时：" + info, "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 textMessageBox.Text = "求解步骤：\r\n" + result + "\r\n\r\n用时反馈：\r\n" + info;
             }
@@ -168,4 +168,5 @@ namespace RubikCubeFinal
         }
     }
 }
+
     
